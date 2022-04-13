@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Final Assessment</title>
+    <!-- Google font link -->
+    <!-- Css link -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/96888f9678.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div id="header-bg"></div>
+        <div id="header-nav">
+            <div id="header-logo">
+                <a href="#basic-intro">Anwyll</a>
+            </div>
+            <i id="nav-icon" class="fa-solid fa-bars fa-3x"></i>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#basic-intro">Home</a></li>
+                    <li><a href="./about.html" target="_blank">About me</a></li>
+                    <li><a href="./contact.html" target="_blank">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="basic-intro">
+            <div id="profile-img">
+                <img src="./profile-img.png" alt="Just a photo of my ugly face">
+            </div>
+            <div id="intro-text">
+                <h2>
+                    Linh Nguyen Le
+                </h2>
+                <p>
+                    Second semester Seneca student, love programming, especially web.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id="adventure" class="col-center">
+            <h1>My journey to programming</h1>
+            <div id="table">
+                <input type="button" value="Back" class="btn">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="time-col">Time</th>
+                            <th class="content-col">What happened?</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Dynamically allocated -->
+                        <tr>
+                            <td>N/A</td>
+                            <td>Nothing happened</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <input type="button" value="Next" class="btn">
+            </div>
+        </section>
+        <hr>
+        <section id="language" class="col-center">
+            <!-- dynamically allocate and have an arrow if there is more than 1 -->
+            <h1>The languages that I know</h1>
+            <div id="lang-list">
+                <input type="button" value="Back" class="btn left">
+                <!-- put stuff here -->
+                <p>I know nothing :(((</p>
+                <input type="button" value="Next" class="btn right">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h4>Thank you for checking out my page</h4>
+        <p>I hope I can update this website in the future as I create more projects to show everyone</p>
+        <h2>What do you think of my page? I would be grateful if you can <a href="./contact.html">send me feedback</a></h2>
+    </footer>
+    <script src="./languages.js"></script>
+    <script src="./milestone.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/96888f9678.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <header>
+        <div id="header-bg"></div>
+        <div id="header-nav">
+            <div id="header-logo">
+                <a href="./index.html#basic-intro">Anwyll</a>
+            </div>
+            <i id="nav-icon" class="fa-solid fa-bars fa-3x"></i>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="./index.html#basic-intro">Home</a></li>
+                    <li><a href="./about.html" target="_blank">About me</a></li>
+                    <li><a href="./contact.html#contact-main">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="contact-main">
+        <div id="contact">
+            <h2>Do you like my website? Reach out to me for more cool things</h2>
+            <p>Here are someway to connect with me, I would love to have a chance to talk</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/le-linh-nguyen-21092002/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-facebook fa-2x"></i></a></li>
+                <li>
+                    <h3>Email</h3>
+                    <form action="https://httpbin.org/post " autocomplete="on" method="post" enctype="text/plain" id="form">
+                        <!-- Name -->
+                        <label for="name">Your Name:</label><br>
+                        <input type="text" id="name" name="name" required placeholder="Linh Nguyen Le"><br>
+                        <!-- Email address -->
+                        <label for="mail">Email:</label><br>
+                        <input type="email" id="mail" name="mail" required placeholder="abcd@gmail.com"><br>
+                        <!-- Address -->
+                        <label for="address">Address:</label><br>
+                        <input type="text" id="address" name="address" required placeholder="123 This Street"><br>
+                        <!-- City -->
+                        <label for="city">City:</label><br>
+                        <input list="city-list" id="city" name="city" required/>
+
+                        <datalist id="city-list">
+                            <option value="Toronto">
+                            <option value="Quebec">
+                            <option value="Montreal">
+                            <option value="Vancouver">
+                            <option value="London">
+                            <option value="Edmonton">
+                            <option value="Saskatoon">
+                        </datalist>
+                        <br>
+                        <!-- Postal code -->
+                        <label for="postal">Postal Code:</label><br>
+                        <input id="postal" name="postal" type="text" 
+                        placeholder= "A4B 2K5" pattern="^[ABCEGHJ-NPRSTVXYabceghj-nprstvxy]\d[ABCEGHJ-NPRSTV-Zabceghj-nprstv-z] ?\d[ABCEGHJ-NPRSTV-Zabceghj-nprstv-z]\d$">
+                        <!-- Radio option -->
+                        <p>Why do you want to send me a message:</p>
+                        <input type="radio" id="question" name="purpose" required value="question">
+                        <label for="question">Question</label><br>
+                        <input type="radio" id="comment" name="purpose" value="comment">
+                        <label for="comment">Comment</label><br>
+                        <input type="radio" id="hiring" name="purpose" value="hiring">
+                        <label for="hiring">Hiring</label> <br>
+                        <!-- Hourly paid, show up wen people select hiring -->
+                        <div id="show">
+                            <label for="salary">Hourly wage: $</label><br>
+                            <input type="number" id="salary" name="salary" placeholder="1.000.000"><br>
+                        </div>
+                        <!-- Message -->
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="6" cols="50" placeholder="Your website is so bad" required></textarea> <br>
+                        <input type="submit" value="Send" class="btn">
+                        <input type="reset" value="Reset" class="btn">
+                        </form>
+                </li>
+                <li>
+                    <a href="./Linh_Nguyen_Le_resume.pdf" download>My resume</a>
+                </li>
+            </ul>
+        </div>
+        <div id="cover-img">
+        </div>
+    </main>
+    <script src="contact.js"></script>
+</body>
+</html>

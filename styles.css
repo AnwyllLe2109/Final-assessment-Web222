@@ -1,0 +1,530 @@
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Odia:wght@100;200;300;400;500;600;700;800&family=Rubik+Moonrocks&display=swap');
+
+/* General setting */
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    /* //change later */
+    color: rgb(217, 203, 248);
+    font-family: 'Anek Odia', sans-serif;
+}
+
+.btn {
+    width: 100px;
+    height: 50px;
+    background: #52057b;
+    background-image: linear-gradient(to bottom, #52057b, #bc6ff1);
+    border-radius: 16px;
+    text-shadow: 4px 4px 3px #666666;
+    font-size: 21px;
+    padding: 5px 10px 5px 10px;
+    border: solid #892CDC 2px;
+  }
+  
+  .btn:hover {
+    background: #bc6ff1;
+    background-image: linear-gradient(120deg, #bc6ff1, #daadf0);
+    font-weight: bold;
+  }
+
+  .col-center{
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    font-size: 90px;
+    margin-bottom: 5%;
+  }
+
+  hr{
+      height: 21px;
+      background-color: rgb(217, 203, 248);
+      border-top: 10px solid rgb(7, 0, 14);
+      border-bottom: 10px solid rgb(7, 0, 14);
+      border-left: 20px solid rgb(217, 203, 248);
+      border-right: 20px solid rgb(217, 203, 248);
+  }
+
+/* Specific setting */
+body{
+    background-color: rgb(7, 0, 14);
+}
+
+
+/* Header setting */
+header{
+    width: 100%;
+    height: 90px;
+    padding: 1rem;
+    z-index: 3;
+}
+
+header #header-bg{
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100vw;
+    height: 80px;
+    opacity: 0.8;
+    background-color: rgb(7, 0, 14);
+    box-shadow: 0 0 8px rgb(7, 0, 14),
+                0 0 10px rgb(7, 0, 14),
+                0 0 16px rgb(7, 0, 14);
+    position: fixed;
+}
+
+header #header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+}
+
+header #navbar{
+    height: 100%;
+    width: 30%;
+}
+
+header #header-logo a{
+    font-size: 50px;
+    font-style: italic;
+    text-decoration: underline;
+    font-family: 'Rubik Moonrocks', cursive;
+    transition: 0.5s;
+}
+
+header #header-logo:hover{
+    transition: 1s;
+    animation: shake 15s infinite linear;
+    transform: scale(1.05);
+    
+}
+
+header #header-logo:hover a{
+    color: #892CDC;
+}
+
+@keyframes shake {
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    50%{
+        filter:hue-rotate(360deg);
+    }
+    100%{
+        filter:hue-rotate(0deg);
+    }
+}
+
+header #nav-icon{
+    display: none;
+}
+
+header #navbar ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header #navbar ul li{
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+header #navbar ul li:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: 0.5s;
+    text-shadow: 0 0 8px white;
+}
+
+
+/* Basic intro */
+#basic-intro{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#basic-intro #profile-img{
+    width:50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#basic-intro #profile-img img{
+    position: relative;
+    width: 70%;
+    z-index: -1;
+    /* right: 200px; */
+}
+
+#basic-intro #intro-text h2{
+    font-size: 70px;
+}
+
+#basic-intro #intro-text p{
+    font-size: 20px;
+    color: #BC6ff1;
+}
+
+/* Advanture section */
+#adventure{
+    width: 100%;
+    height: 100vh;
+}
+
+#adventure #table{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+
+#adventure table,th,td{
+    border: 2px solid #52057B;
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+#adventure table{
+    max-width: 80%;
+    margin: 2%;
+}
+
+#adventure th,td{
+    padding: 20px 30px;
+}
+
+#adventure th{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#adventure td{
+    font-size: 18px;
+}
+
+#adventure .btn{
+    display: none;
+}
+
+#language{
+    width: 100%;
+    height: 60vh;
+}
+
+#language #lang-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#language #lang-list .btn{
+    position: absolute;
+    display: none;
+}
+
+#language #lang-list .left{
+    left: 0;
+}
+
+#language #lang-list .right{
+    right: 0;
+}
+
+#language #lang-list p{
+    font-size: 40px;
+    color: #892cdc;
+    font-weight: bold;
+    letter-spacing: 20px;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer{
+    width: 100%;
+    background-image: linear-gradient(to right, #6a11cb 0%, #52057b 100%);
+    padding-left: 10%;
+    padding-top: 2rem;
+    padding: 2rem 0 1rem 10%;
+}
+
+footer h4{
+    font-size: 30px;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+footer h2{
+    font-size: 40px;
+}
+
+footer h2 a{
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(30, 216, 230);
+}
+
+
+/* Contact setting */
+#contact-main{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#cover-img{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80);
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+#contact ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+#contact ul li h3{
+    font-size: 28px;
+}
+
+#contact ul li form input, textarea{
+    color:#52057B;
+    font-weight: bold;
+    padding: 3%;
+}
+
+#contact ul li form input:invalid{
+    border:  2px solid rgb(212, 36, 65);
+}
+
+#contact ul li:nth-child(4) a {
+    display: inline;
+    font-size: 20px;
+    background-color: #52057b;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+#contact #show{
+    display: none;
+}
+
+/* Setting for about.html */
+#about{
+    display: flex;
+    justify-content: space-around;
+}
+
+#about h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+#about #honesty{
+    width: 50%;
+}
+
+#about #honesty p{
+    font-size: 20px;
+}
+
+#about #honesty p:nth-child(3){
+    font-weight: bold;
+    color: #6a11cb ;
+    font-size: 24px;
+}
+
+#about #honesty p:nth-child(3) time{
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+
+#about #personal-info table{
+    border: none;
+}
+
+.section1{
+    width: 30%;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color:#6a11cb;
+}
+
+.section2{
+    width: 50%;
+    border: none;
+}
+
+
+/* setting for phone user */
+
+@media only screen and (max-width: 800px){
+    body{
+        width: 100%;
+    }
+
+    header{
+        position: fixed;
+        padding: 0;
+        top: 0;
+    }
+
+    header #header-bg{
+        position:absolute;
+    }
+
+    header #header-nav{
+        justify-content: space-around;
+    }
+
+    header #nav-icon{
+        display: initial;
+        position: relative;
+        right: 0;
+    }
+    
+    #navbar{
+        display: none;
+    }
+
+    #navbar.nav-active{
+        display: initial;
+        position: absolute;
+        right: 0;
+        top: 8vh;
+    }
+
+    #navbar.nav-active ul{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 92vh;
+        background-color: #52057b;
+    }
+
+    #basic-intro{
+        margin-top: 4%;
+        display: block;
+    }
+
+    #basic-intro #profile-img{
+        width: 100%;
+        height: auto;
+    }
+
+    #basic-intro #intro-text{
+        text-align: center;
+    }
+
+    #basic-intro #intro-text h2{
+        font-size: 50px;
+    }
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        line-height: 0.9;
+    }
+
+    #adventure{
+        height: 250vh;
+    }
+
+    #adventure #table{
+        padding: 40px;
+    }
+
+    #language #lang-list p{
+        letter-spacing: 8px;
+        font-size: 35px;
+    }
+
+    footer h4{
+        font-size: 20px;
+    }
+    
+    footer p{
+        font-size: 16px;
+    }
+
+    footer h2{
+        font-size: 30px;
+    }
+
+    #about{
+        display: initial;
+    }
+
+    #about div{
+        margin: 4%;
+        padding: 2%;
+    }
+
+    #about #honesty{
+        margin-top: 17%;
+        width: 100%;
+        
+    }
+
+    #about #honesty h2{
+        text-align: center;
+    }
+
+
+    #contact-main{
+        height: 190vh;
+    }
+
+    #cover-img{
+        display: none;
+    }
+
+
+    #contact ul{
+        display: initial;
+        width: 100%;
+    }
+
+    #contact ul li{
+        text-align: center;
+        margin: 30px;
+        padding: 10px;
+        border-bottom: #52057b 2px solid;
+    }
+
+    #contact ul li:nth-child(4) a{
+        display: block;
+    }
+}
